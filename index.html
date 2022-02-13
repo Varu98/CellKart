@@ -2,14 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script defer src="./javascript/navbar.js"></script>
     <title>Cell Kart</title>
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <navbar>
+            <!-- nav logo -->
+            <navLogo class="nav-logo-section">
+                <img class="logo-img" src="./assets/cell_kart.png" alt="" />
+                <h1>Cell Kart</h1>
+            </navLogo>
 
+            <!-- nav search -->
+            <navSearch>
+                <input class="nav_search-input" type="text" placeholder="Search..." />
+                <ion-icon name="search-circle-outline"></ion-icon>
+            </navSearch>
+
+            <!-- nav Menu -->
+            <navMenu>
+                <!-- nav Menu Hamburger Button-->
+                <button class="hamburger-menu-btn">
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+
+                <!-- nav Menu Class-->
+                <div class="nav-menu">
+                    <button class="login-btn">Login</button>
+                    <span class="icon-container">
+                        <span class="nav-icon">
+                            <ion-icon name="heart-circle-outline"></ion-icon>
+                            <span class="icon-btn__badge">8</span>
+                        </span>
+                        <a class="icon-link">Wishlist</a>
+                    </span>
+
+                    <span class="icon-container">
+                        <span class="nav-icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <span class="icon-btn__badge">8</span>
+                        </span>
+                        <a class="icon-link">Cart</a>
+                    </span>
+                </div>
+            </navMenu>
+        </navbar>
+    </header>
+    <div class="container">
+        <heroImg>
+            <!-- hero image     -->
+            <!-- redirects to product page -->
+            <div class="hero-img-container">
+                <img class="hero-img" src="./assets/heroimge.jpg" alt="" />
+                <div class="hero-content">
+                    <p class="hero-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos rem
+                        sit eaque beatae nisi cum, maxime fugiat! Atque ipsum debitis rem
+                        officia facilis ab optio, sapiente quasi. Aut, ut explicabo!
+                    </p>
+                    <button class="secondary-btn hero-btn">Explore</button>
+                    <button class="primary-btn hero-btn">Shop Now</button>
+                </div>
+            </div>
+            <!-- description about the website -->
+        </heroImg>
+
+        <funnelImg>
+            <h1 class="align-center txt-clr-primary txt-fs-mont">
+                <u>Shop By The Most Favorited Catagories</u>
+            </h1>
+
+            <div class="category-img-container">
+                <img class="category-img" src="./assets/trending.jpg" alt="" />
+                <img class="category-img" src="./assets/bestsellers.jpg" alt="" />
+                <img class="category-img" src="./assets/latest.jpg" alt="" />
+                <img class="category-img" src="./assets/valentine's.jpg" alt="" />
+            </div>
+            <!-- mini images of 4 for 
+            1. pocket friendly store
+            2. bestsellers of the month
+            3. latest in tech
+            4. valentine's day special -->
+        </funnelImg>
+
+        <content>
+            <!-- 
+    5-6 images:-
+         trending accessories 
+         trending accessories 
+         trending accessories 
+         trending accessories 
+         trending accessories 
+         trending accessories 
+    -->
+            <!-- <h1 class="align-center txt-clr-primary txt-fs-mont">
+                <u>Trending Accessories</u>
+            </h1>
+
+            <div class="trending-accessories-img-container">
+                <img class="trending-accessories-img" src="./assets/accessory/31bBMCBWCVL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/519uMzMXJVL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/51spbABphFL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/61+Lfxgog+S._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/61DKcGr12OL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/61gscZYmaoL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/61vtLhO6fDL._AC_UL320_.jpg" alt="" />
+                <img class="trending-accessories-img" src="./assets/accessory/71lVwl3q-kL._AC_UL320_.jpg" alt="" />
+            </div>
+        </content> -->
+            <!-- footer -->
+    </div>
+    <footer></footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

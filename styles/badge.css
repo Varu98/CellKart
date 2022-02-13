@@ -1,0 +1,61 @@
+@import url(./main.css);
+
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: none;
+  color: #333;
+  border: none;
+  outline: none;
+  min-width: 1rem;
+  min-height: 1rem;
+  border-radius: 50%;
+}
+
+.icon-btn__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10%;
+  right: -20%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: red;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.icon__notification {
+  font-size: 3rem;
+}
+
+ion-icon {
+  font-size: 2rem;
+}
+
+.icon__img {
+  max-width: 5rem;
+  max-height: 5rem;
+  position: relative;
+}
+
+.img-btn__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
