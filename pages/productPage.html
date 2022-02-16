@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://bee-ui.netlify.app/styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Product Page</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <navbar>
+        <!-- nav logo -->
+        <navLogo class="nav-logo-section">
+            <img class="logo-img" src="./assets/cell_kart.png" alt="" />
+            <h1>Cell Kart</h1>
+        </navLogo>
+
+        <!-- nav search -->
+        <navSearch>
+            <input class="nav_search-input" type="text" placeholder="Search..." />
+            <ion-icon name="search-circle-outline"></ion-icon>
+        </navSearch>
+
+        <!-- nav Menu -->
+        <navMenu>
+            <!-- nav Menu Hamburger Button-->
+            <button class="hamburger-menu-btn">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+
+            <!-- nav Menu Class-->
+            <div class="nav-menu">
+                <button class="login-btn">Login</button>
+                <span class="icon-container">
+                    <span class="nav-icon">
+                        <ion-icon name="heart-circle-outline"></ion-icon>
+                        <span class="icon-btn__badge">8</span>
+                    </span>
+                    <a class="icon-link">Wishlist</a>
+                </span>
+
+                <span class="icon-container">
+                    <span class="nav-icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span class="icon-btn__badge">8</span>
+                    </span>
+                    <a class="icon-link">Cart</a>
+                </span>
+            </div>
+        </navMenu>
+    </navbar>
+
+    <!-- filter component -->
+    <div class="product-filter-container">
+        <div class="filter-container">
+            <div class="filter-content-container">
+                <filter-section class="flex-row flex-space-btw">
+                    <h2>Filters</h2>
+                    <button>clear</button>
+                </filter-section>
+
+                <filter-section>
+                    <h2>Price</h2>
+                    <div class="price-range flex-row">
+                        <span>50</span>
+                        <span>150</span>
+                        <span>200</span>
+                    </div>
+                    <input type="range" name="" id="filter-range-input" />
+                </filter-section>
+
+                <filter-section class="flex-column">
+                    <h2>Category</h2>
+                    <label for="mobile-brand">
+                        <input name="mobile-brand" type="checkbox" />
+                        Realme</label>
+                    <label for="mobile-brand">
+                        <input name="mobile-brand" type="checkbox" />
+                        Redmi</label>
+                    <label for="mobile-brand">
+                        <input name="mobile-brand" type="checkbox" />
+                        Motorola</label>
+                </filter-section>
+
+                <filter-section class="flex-column">
+                    <h2>Rating</h2>
+                    <label for="rating">
+                        <input name="rating" type="radio" />
+                        4 Star and above</label>
+                    <label for="rating">
+                        <input name="rating" type="radio" />
+                        3 Star and above</label>
+                    <label for="rating">
+                        <input name="rating" type="radio" />
+                        Star and above</label>
+                </filter-section>
+
+                <filter-section class="flex-column">
+                    <h2>Rating</h2>
+                    <label for="price-sort">
+                        <input name="price-sort" type="radio" />
+                        price - low to high
+                    </label>
+                    <label for="price-sort">
+                        <input name="price-sort" type="radio" />
+                        price - high to low
+                    </label>
+                </filter-section>
+            </div>
+        </div>
+
+        <!-- product listings -->
+        <div class="product-container">
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <span class="price-card-img">
+                    <img src="../assets/realme_phone.jpeg" alt="" />
+                </span>
+                <div class="price-card-header">
+                    <div class="price-card-product-name">Realme Pro 2050</div>
+                    <span class="price-card-product-price">1200 Rs</span>
+                    <span class="price-card-price-badge">
+                        <span class="price-card-discount-rate">20%</span>
+                        <span class="material-icons price-card-icon-discount">
+                            discount
+                        </span>
+                    </span>
+                </div>
+                <div class="price-card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ipsam
+                    numquam, delectus beatae sequi corrupti sit
+                </div>
+                <div class="price-card-footer flex-row">
+                    <button class="secondary-btn">Details</button>
+                    <button class="primary-btn">
+                        Buy
+                        <ion-icon name="cart"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
