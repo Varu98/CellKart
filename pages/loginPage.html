@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bee-ui.netlify.app/styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <navbar>
+        <!-- nav logo -->
+        <navLogo class="nav-logo-section">
+            <img class="logo-img" src="../assets/cell_kart.png" alt="" />
+            <h1>Cell Kart</h1>
+        </navLogo>
+
+        <!-- nav search -->
+        <navSearch>
+            <input class="nav_search-input" type="text" placeholder="Search..." />
+            <ion-icon name="search-circle-outline"></ion-icon>
+        </navSearch>
+
+        <!-- nav Menu -->
+        <navMenu>
+            <!-- nav Menu Hamburger Button-->
+            <button class="hamburger-menu-btn">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+
+            <!-- nav Menu Class-->
+            <div class="nav-menu">
+                <button class="login-btn">Login</button>
+                <span class="icon-container">
+                    <span class="nav-icon">
+                        <ion-icon name="heart-circle-outline"></ion-icon>
+                        <span class="icon-btn__badge">8</span>
+                    </span>
+                    <a class="icon-link">Wishlist</a>
+                </span>
+
+                <span class="icon-container">
+                    <span class="nav-icon">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <span class="icon-btn__badge">8</span>
+                    </span>
+                    <a class="icon-link">Cart</a>
+                </span>
+            </div>
+        </navMenu>
+    </navbar>
+
+    <!-- login form starts -->
+    <login-container class="flex-column">
+        <form action="">
+            <h2 class="align-center">Login</h2>
+            <div class="login-content">
+                <label for="email">Email address
+                </label>
+                <input type="text" placeholder="abc@abc.com">
+                <label for="password">Password
+                </label>
+                <input type="password">
+            </div>
+            <div class="login-footer">
+                <label for="remember">
+                    <input type="checkbox" name="" id="">
+                    Remember me
+                </label>
+                <a href="">Forgot Your Password?</a>
+            </div>
+            <button class="primary-btn" type="submit">Login</button>
+            <a class="align-center" href="">Create New Account</a>
+        </form>
+    </login-container>
+
+</body>
+
+</html>
